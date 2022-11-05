@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+  
+body {
+    background-color: rgb(54, 54, 54);
+    color: azure;
+}
+
+.logo img {
+    margin-top: 25px;
+    width: 20%;
+    display: flex;
+}
+
+.weather-section {
+    display: flex;
+    align-items: center;
+}
