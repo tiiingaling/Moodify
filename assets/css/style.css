@@ -21,7 +21,11 @@ body {
     display: flex;
 }
 
-.search-section {
+section {
+    
+}
+
+.search-container {
     display: flex;
     padding-left: 50px;
     padding-top: 50px;
@@ -30,10 +34,11 @@ body {
 
 .weather-location {
     display: flex;
-    padding-top: 10px;
     padding-left: 50px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
+    font-size: small;
 }
+
 
 .weather-section {
     display: flex;
@@ -49,7 +54,13 @@ body {
     display:flex;
     justify-content: center;
     padding-bottom: 75px;
+    flex-direction: column;
+    align-items: center;
 
+}
+
+h1 {
+    padding-bottom: 15px;
 }
 
 footer {
@@ -70,6 +81,12 @@ h2 {
     justify-content: center;
     text-align: center;
     padding-bottom: 20px;
+}
+
+.current-weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
