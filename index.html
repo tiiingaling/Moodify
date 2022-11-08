@@ -12,7 +12,7 @@
         <div class="logo">
          <img src="./assets/images/logo-colour.png">
         </div>
-    </header> 
+    </header>
 
     <!--left side bar-->
     <main>
@@ -35,32 +35,52 @@
                     <span>Current Temperature</span>
                     <span id="temp_value"></span>
                 </div>
-                <div class="wind">
-                    <span>Wind</span>
-                    <span id="wind-value"></span>
+                <div class="recent-section" id="recent-locations"></div>
+            </aside>
+    
+            <section>
+                <div id="current-weather">
+                    <h2>Current Weather</h2>
+                    <div id="weather-icon"></div>
+                        <div class ="weather-location">
+                            <h2 id="location-name">Enter a Location</h2>
+                        </div>
+                    
+                    <div class ="weather-info">
+                        <div class="description">
+                            <span id="desc"></span>
+                        </div>
+                        <div class="tempterature">
+                            <span>Temperature:</span>
+                            <span id="temp-value"></span>
+                        </div>
+                        <div class="wind">
+                            <span>Wind:</span>
+                            <span id="wind-value"></span>
+                        </div>
+                        <div class="humidity">
+                            <span>Humidity:</span>
+                            <span id="humid-value"></span>
+                        </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="humidity">
-                    <span>humidity</span>
-                    <span id="humidity-value"></span>
-                </div>
-                <div class="uv-index">
-                    <span>UV Index</span>
-                    <span id="uv-value"></span>
-                </div>
-            </div>
+            </section>
 
             <div id="player-section">
-                <h1> Youtube Playlist</h1>
-                <div id="player"></div>
-            </div>
-        </section>
-    </main>
+                <h1>Music</h1>
+                <div id="player">Video here</div>  
+            </div>        
+        </main>
+    
+    </body>
 
     <footer id="contact">
       <h2>Contact Us</h2>
       <p>moodifycontact@gmail.com</p>
     </footer>
-
 </body>
-<script src="assets/script.js"></script>
+
+<script src="assets/js/terms.js"></script>
+<script src="assets/js/script.js"></script>
 </html>
