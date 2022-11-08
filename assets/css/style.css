@@ -9,13 +9,68 @@ body {
     color: azure;
 }
 
+.logo {
+    display: flex;
+    padding-left: 50px;
+
+}
+
 .logo img {
     margin-top: 25px;
     width: 20%;
     display: flex;
 }
 
+.search-section {
+    display: flex;
+    padding-left: 50px;
+    padding-top: 50px;
+
+}
+
+.weather-location {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 25px;
+}
+
 .weather-section {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
+
+.weather-info {
+    padding:50px;
+}
+
+#player-section {
+    display:flex;
+    justify-content: center;
+    padding-bottom: 75px;
+
+}
+
+footer {
+    background-color: rgb(44, 44, 44);
+    text-align: center;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact {
+    display: flex;
+    justify-content:center;
+    
+}
+
+h2 {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
