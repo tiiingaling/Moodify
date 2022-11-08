@@ -26,39 +26,8 @@ var addLocation = (selectedLocation) => {
   console.log(recentLocations)
 
   localStorage.setItem("recentLocations", JSON.stringify(recentLocations));
-
-  updateRecentLocationsList();
 }
 
-//adds searched locations to history list with loop
-var updateRecentLocationsList = () => {
-    
-  var recentList = document.getElementById('recent-locations') 
-  recentList.innerHTML = '';   
-  
-  for (var i =0; i < recentLocations.length; i++) {
-      var location = recentLocations[i];        
-
-      var newLocation = document.createElement('div');
-      newLocation.classList.add('recent')
-      newLocation.addEventListener('click', clickLocation);
-      console.log('location', location);
-      newLocation.textContent = location;
-
-      recentList.appendChild(newLocation)
-  }
-}
-
-//load the list
-var loadRecent = () => {
-  var locations = localStorage.getItem('recentLocations');
-  if (locations) {
-      //the ... creates separate items instead of one array
-      recentLocations.push(...JSON.parse(locations));
-
-      updateRecentLocationsList();
-  }
-}
 
 //fetch the lon,lat data from LocationInput
 var lookupLocation = (search) => {
@@ -117,8 +86,6 @@ var displayCurrent = (weatherData) => {
   }
 
 searchButton.addEventListener('click', getLocation);
-
-loadRecent();
 
 //WEATHER API END
 
