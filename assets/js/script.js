@@ -41,7 +41,6 @@ var updateRecentLocationsList = () => {
 
       var newLocation = document.createElement('div');
       newLocation.classList.add('recent')
-      newLocation.addEventListener('click', clickLocation);
       console.log('location', location);
       newLocation.textContent = location;
 
