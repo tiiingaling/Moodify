@@ -21,22 +21,65 @@ body {
     display: flex;
 }
 
-section {
-    
+.search-section {
+    width:90%;
+    background-color: rgb(87, 87, 87);
+    margin:1%;
+    padding:1%;
 }
 
-.search-container {
-    display: flex;
-    padding-left: 50px;
-    padding-top: 50px;
+.search-section input {
+    width:90%;
+    margin-left: 5%;
+    padding-left: 1%;
+}
 
+.search-section button {
+    width:90%;
+    margin-left: 5%;
+    padding-left: 1%;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    /* padding-top: 50px; */
+   background-color: rgb(44, 44, 44); 
+    width: 20%;
+    margin:5%;
+    margin-top: 1%;
+    margin-left: 1%;
+    height: 13vh;
+}
+
+main {
+    display: flex;
+    text-align: center;
+}
+
+/* #location {
+    background-color: rgb(44, 44, 44);
+    
+} */
+
+section {
+    display: flex;
+    width:48%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .weather-location {
     display: flex;
-    padding-left: 50px;
-    padding-bottom: 10px;
     font-size: small;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -47,11 +90,12 @@ section {
 }
 
 .weather-info {
-    padding:50px;
+    padding:10px;
 }
 
 #player-section {
     display:flex;
+    margin-top: 7%;
     justify-content: center;
     padding-bottom: 75px;
     flex-direction: column;
@@ -79,15 +123,11 @@ footer {
 
 h2 {
     justify-content: center;
-    text-align: center;
+    
     padding-bottom: 20px;
+    align-content: center;
 }
 
-.current-weather {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 
 
