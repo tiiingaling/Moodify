@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moodify</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header> 
@@ -19,19 +22,24 @@
         <aside>
             <div class="search-section">
                  <input type="text" id="location" placeholder="Enter location">
-                 <button id="search">search</button>
+                 <button id="search">Search</button>
                  <div id="error"></div>
             </div>
             <div class="about">
-
+                <h2>About Us</h2>
+                <p> We created Moodify as tool for a user to enter a desired location upon which,
+                    they will be presented with a song or playlist that corresponds with the current weather mood.
+                </p>
             </div>
         </aside>
 <!--Main weather section-->
             <section>
                 <div id="current-weather">
                     <h2>Current Weather</h2>
-                        <div class ="weather-location">
+                      <div id="weather-img">
+                        <div class ="weather-location" >
                             <div id="weather-icon"></div>
+                        </div>
                             <h2 id="location-name">Enter a Location</h2>
                         </div>
                         
@@ -72,7 +80,10 @@
 
     <footer id="contact">
       <h2>Contact Us</h2>
-      <p>moodifycontact@gmail.com</p>
+      <p>If you have any questions or enquiries, please do not hesitate to you contact us 
+        using the email below and we will do our best to get back to you as soon as possible.
+      </p>
+      <h3>contact@moodify.com</h3>
     </footer>
 </body>
 
