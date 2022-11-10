@@ -122,11 +122,8 @@ var videoId = '';
 
 
 function youtubeAPI(description) {
-  //var term = searchTerms[0].term
+
   var apiURL = `${API_URL}/search?key=${API_KEY}&type=video&part=snippet&q=${description}+weather+music`
-  //var apiURL = "http://127.0.0.1:5500/assets/Json/rainy.json"
-
-
 
   fetch(apiURL)
     .then(response => response.json())
