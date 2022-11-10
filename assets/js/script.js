@@ -1,4 +1,4 @@
-                                                                                                //WEATHER API HERE
+ //WEATHER API HERE
 
 //Global variables
 var WEATHER_API_URL = 'https://api.openweathermap.org';
@@ -27,7 +27,6 @@ var addLocation = (selectedLocation) => {
 
   localStorage.setItem("recentLocations", JSON.stringify(recentLocations));
 }
-
 
 //fetch the lon,lat data from LocationInput
 var lookupLocation = (search) => {
@@ -68,22 +67,26 @@ var displayCurrent = (weatherData) => {
 
   var currentData = weatherData.current
 
+    //icon data from API
+    var iconCode = currentData.weather[0].icon;
+    var iconURL = `https://openweathermap.org/img/w/${iconCode}.png`;
+
   var temp = currentData.temp;
   var windSpeed = currentData.wind_speed
   var humidity = currentData.humidity;
-
-  //icon data from API
-  var iconCode = currentData.weather[0].icon;
-  var iconURL = `https://openweathermap.org/img/w/${iconCode}.png`;
-  var weatherDesc = currentData.weather[0].description;
+  var weatherDesc = currentData.weather[0].description;  
      
   var weatherIcon = document.getElementById('weather-icon');
   weatherIcon.innerHTML = `<img src="${iconURL}" alt="${weatherDesc}"></img>`
-
+  
+  //weather description data
+  document.getElementById('description').textContent = desc
+  
   document.getElementById('temp-value').textContent = temp + ' °F'
   document.getElementById('wind-value').textContent = windSpeed + ' mph'
   document.getElementById('humid-value').textContent = humidity + ' %'
   }
+  
 
 searchButton.addEventListener('click', getLocation);
 

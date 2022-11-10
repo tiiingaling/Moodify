@@ -1,0 +1,182 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "ZhyNPlGWC1cjNlHQIlwYAheBMnA",
+    "nextPageToken": "CAUQAA",
+    "regionCode": "GB",
+    "pageInfo": {
+        "totalResults": 1000000,
+        "resultsPerPage": 5
+    },
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "EQk5CY3-7TDkI_Me9Oq4c0hZ5Qw",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "nHSawp_TyoE"
+            },
+            "snippet": {
+                "publishedAt": "2021-02-07T06:46:59Z",
+                "channelId": "UCj12CDFxRZ_PUx7eNr3WXyw",
+                "title": "8hrs of Snow Falling on Lake with Relaxing Music for Relaxation, Meditation, Sleep, Study, Insomnia",
+                "description": "I filmed this beautiful enchanting scene with snow falling on a lake while ducks paddled around in the water. I added a lovely ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/nHSawp_TyoE/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/nHSawp_TyoE/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/nHSawp_TyoE/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "PURE RELAXATION",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-02-07T06:46:59Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "nbeE0vDXLd-JghrzQm8I8lP-pLM",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "5RHTt4_XVVU"
+            },
+            "snippet": {
+                "publishedAt": "2019-01-14T02:28:42Z",
+                "channelId": "UCfR8HhkbpDAwvYxrecNg4Mg",
+                "title": "Chronicles of Narnia | Winter Woods Music &amp; Ambience - Relaxing Music with Sounds of Winter",
+                "description": "\"And then she saw that there was a light ahead of her; not a few inches away where the back of the wardrobe ought to have been, ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/5RHTt4_XVVU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/5RHTt4_XVVU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/5RHTt4_XVVU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Ambient Worlds",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-01-14T02:28:42Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "7gF6n-W5t8pVIJo6qUUTRu3gYOY",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "NW5-QMnF6PY"
+            },
+            "snippet": {
+                "publishedAt": "2021-12-06T13:00:18Z",
+                "channelId": "UCK5TFZ9yB5aAEuAjbv1i_GA",
+                "title": "Snow Night on Window at Coffee Shop Ambience with Relaxing Smooth Jazz Music and Snow Falling",
+                "description": "Every winter season it snows in the coffee shop ambience, so immerse yourself in this winter ambience on a snowy night on the ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/NW5-QMnF6PY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/NW5-QMnF6PY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/NW5-QMnF6PY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Coffee Shop Ambience",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-12-06T13:00:18Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "37UbPx1i5v-w617JfF9hqyAgnxE",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "9UMxZofMNbA"
+            },
+            "snippet": {
+                "publishedAt": "2021-06-13T11:10:55Z",
+                "channelId": "UChs0pSaEoNLV4mevBFGaoKA",
+                "title": "Chillout Lounge - Calm &amp; Relaxing Background Music | Study, Work, Sleep, Meditation, Chill",
+                "description": "Chillout Lounge - Relaxing Background Music | Study, Work, Sleep, Meditation, Chill Enjoy Calm & Soothing music for Relax, ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/9UMxZofMNbA/default_live.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/9UMxZofMNbA/mqdefault_live.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/9UMxZofMNbA/hqdefault_live.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "The Good Life Radio x Sensual Musique",
+                "liveBroadcastContent": "live",
+                "publishTime": "2021-06-13T11:10:55Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "3KkUdPaAG_f74CsZkVfJQUzk0ik",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "OpRpqwDzKUY"
+            },
+            "snippet": {
+                "publishedAt": "2021-12-22T11:00:16Z",
+                "channelId": "UC0c8p9fpM5jUyVVVqc4YVEw",
+                "title": "Snowy Day | Snowy Winter Day on Street with relaxing songs | Indie/Pop/Folk/Acoustic Compilation",
+                "description": "Snowy Day | Snowy Winter Day on Street with relaxing songs | Indie/Pop/Folk/Acoustic Compilation ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/OpRpqwDzKUY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/OpRpqwDzKUY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/OpRpqwDzKUY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Chill Station",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-12-22T11:00:16Z"
+            }
+        }
+    ]
+}

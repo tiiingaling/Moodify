@@ -1,0 +1,182 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "1SoIdXyR4mD3rPMvWmmyW-dNYI0",
+    "nextPageToken": "CAUQAA",
+    "regionCode": "GB",
+    "pageInfo": {
+        "totalResults": 1000000,
+        "resultsPerPage": 5
+    },
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "N7fzPxK3_pa_jQGZ-6nkJisp1HI",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "JB_iylafXiQ"
+            },
+            "snippet": {
+                "publishedAt": "2019-07-12T12:35:18Z",
+                "channelId": "UCEi0EgWJ5m7gVBQ68a1L0TA",
+                "title": "HELLO SUNSHINE ☀️ - A Summer Indie/Folk/Pop Playlist",
+                "description": "Have the best summer ever with this sun-soaked selection of folk/pop songs! Tracklist & download below… LISTEN ON ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/JB_iylafXiQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/JB_iylafXiQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/JB_iylafXiQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "alexrainbirdMusic",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-07-12T12:35:18Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "F1bQpNZb7eelTGI65kDAc82f-us",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "lQwzzr24DJw"
+            },
+            "snippet": {
+                "publishedAt": "2021-08-17T13:45:58Z",
+                "channelId": "UCesIVKR3mrOc_UZqHz1UECQ",
+                "title": "a playlist for a sunny day",
+                "description": "hey guys, I hope you like the vibe of the video :)",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/lQwzzr24DJw/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/lQwzzr24DJw/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/lQwzzr24DJw/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Aesthetic Playlist",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-08-17T13:45:58Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "D1qgUaowL1tI6DPsm7bmURs2oQw",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "CZz5mWUdw3A"
+            },
+            "snippet": {
+                "publishedAt": "2022-05-07T14:00:12Z",
+                "channelId": "UC6adGnLLYSMtOnTIDOQiDgA",
+                "title": "[Playlist] welcoming sunny day | another morning at home",
+                "description": "[Playlist] welcoming sunny day | another morning at home https://youtu.be/CZz5mWUdw3A ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/CZz5mWUdw3A/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/CZz5mWUdw3A/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/CZz5mWUdw3A/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Lemon ",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-05-07T14:00:12Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "R3iZEdnD5NCEA09SYw70HbJqKOQ",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "MuEtDcWtIKE"
+            },
+            "snippet": {
+                "publishedAt": "2022-11-08T13:00:07Z",
+                "channelId": "UCIWAwKP3_KcWned5aLqZHtw",
+                "title": "Cozy Jazz Piano Music &amp; 4K Coffee Shop Ambience with Smooth Jazz Piano Music to Stress Relief,Relax",
+                "description": "Cozy Jazz Piano Music & 4K Coffee Shop Ambience with Smooth Jazz Piano Music to Stress Relief,Relax @Cozy Smooth Jazz ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/MuEtDcWtIKE/default_live.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/MuEtDcWtIKE/mqdefault_live.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/MuEtDcWtIKE/hqdefault_live.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Cozy Coffee Shop",
+                "liveBroadcastContent": "live",
+                "publishTime": "2022-11-08T13:00:07Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "2ml-F27TLjyNdZWB9GTC9IqLb3E",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "wSZ0j6eBRpg"
+            },
+            "snippet": {
+                "publishedAt": "2021-06-22T19:00:12Z",
+                "channelId": "UCBngEZVzX2JUwHygif62N0g",
+                "title": "Summer Day Ambience 🌿🌞 Relaxing Lakeside Picnic On A Beautiful Sunny Day With Calming Nature Sounds.",
+                "description": "Visit RainRider's Cozy Corner to learn about the importance of creating a warm & cozy environment in your own home & how to ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/wSZ0j6eBRpg/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/wSZ0j6eBRpg/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/wSZ0j6eBRpg/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "RainRider Ambience",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-06-22T19:00:12Z"
+            }
+        }
+    ]
+}

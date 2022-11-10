@@ -1,0 +1,182 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "09atTckWphCXXB8P2Pn8dxSKcPo",
+    "nextPageToken": "CAUQAA",
+    "regionCode": "GB",
+    "pageInfo": {
+        "totalResults": 1000000,
+        "resultsPerPage": 5
+    },
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "hACqa7T3Jh8AdzDWTFpixvxR4bs",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "cjkFG6bHGNc"
+            },
+            "snippet": {
+                "publishedAt": "2018-08-24T08:22:07Z",
+                "channelId": "UCjzHeG1KWoonmf9d5KBvSiw",
+                "title": "Relaxing Music &amp; Soft Rain: Sleep Music, Calm Piano Music, Healing Music, Peaceful Music ★149",
+                "description": "Relaxing music with soft rain that can be described as sleep music, calm piano music, healing music, peaceful music and relaxing ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/cjkFG6bHGNc/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/cjkFG6bHGNc/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/cjkFG6bHGNc/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Soothing Relaxation",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-08-24T08:22:07Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "JbIJdkv97bg6nBSTZnBP29NwZqc",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "o8GrqUSdzi0"
+            },
+            "snippet": {
+                "publishedAt": "2018-11-01T12:02:37Z",
+                "channelId": "UCjzHeG1KWoonmf9d5KBvSiw",
+                "title": "Relaxing Music &amp; Rain Sounds - Beautiful Piano Music, Background Music, Sleep Music • You &amp; Me",
+                "description": "Relaxing music and rain sounds (10 hours) by Soothing Relaxation. Beautiful piano music (\"You & Me\") in a 10 hours long version ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/o8GrqUSdzi0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/o8GrqUSdzi0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/o8GrqUSdzi0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Soothing Relaxation",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-11-01T12:02:37Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "tVULKZ7AncY9Cu3_f07P7f1F04Y",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "mkgylOJSdhE"
+            },
+            "snippet": {
+                "publishedAt": "2020-07-12T18:59:18Z",
+                "channelId": "UC8O01n9bla2e-o3GAsOkCEg",
+                "title": "RAINY DAY COFFEE SHOP AMBIENCE: Piano Music and Rain Sounds With Distant Thunder",
+                "description": "A special thank-you to Giuseppe Milana for giving me permission to use his beautiful artwork for this coffee shop ambience!",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/mkgylOJSdhE/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/mkgylOJSdhE/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/mkgylOJSdhE/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Autumn Cozy",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-07-12T18:59:18Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "wGl-OAhrzDHX0f6dVvOAPbHU2Fc",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "ooOSTEouYCs"
+            },
+            "snippet": {
+                "publishedAt": "2020-10-30T14:15:51Z",
+                "channelId": "UCb1ANUIW7arUUDI-Mwz65rw",
+                "title": "Rain Sounds &amp; Relaxing Music 24/7 - Piano Music, Sleep, Study, Yoga, Stress Relief, Meditation",
+                "description": "Rain Sounds & Relaxing Music 24/7 - Piano Music, Sleep, Study, Yoga, Stress Relief, Meditation A FEW WORDS ABOUT OCB ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/ooOSTEouYCs/default_live.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/ooOSTEouYCs/mqdefault_live.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/ooOSTEouYCs/hqdefault_live.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "OCB Relax Music",
+                "liveBroadcastContent": "live",
+                "publishTime": "2020-10-30T14:15:51Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "muzdOhK-dzDWsoJkyuDR5PnaH2s",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "ekSJVmxMiL4"
+            },
+            "snippet": {
+                "publishedAt": "2022-09-02T13:00:22Z",
+                "channelId": "UC84t1K5ri-7u9bFCaUKTXDA",
+                "title": "Autumn Rainy Day Cozy Coffee Shop 4K ☕ Smooth Jazz Music to Relax/Study/Work to",
+                "description": "Autumn Rainy Day Cozy Coffee Shop 4K ☕ Smooth Jazz Music to Relax/Study/Work to. Jazz music resounds in a warm space ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/ekSJVmxMiL4/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/ekSJVmxMiL4/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/ekSJVmxMiL4/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Relaxing Jazz Piano",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-09-02T13:00:22Z"
+            }
+        }
+    ]
+}
