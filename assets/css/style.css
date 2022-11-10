@@ -12,7 +12,6 @@ body {
 .logo {
     display: flex;
     padding-left: 50px;
-
 }
 
 .logo img {
@@ -70,7 +69,6 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
 .weather-location {
@@ -81,7 +79,6 @@ section {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .weather-section {
     display: flex;
@@ -105,8 +102,6 @@ section {
     flex-direction: column;
     align-items: center;
 }
-
-
 
 h1 {
     padding-bottom: 15px;
@@ -132,7 +127,3 @@ h2 {
     padding-bottom: 20px;
     align-content: center;
 }
-
-
-
-

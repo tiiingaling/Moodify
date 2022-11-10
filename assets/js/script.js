@@ -57,14 +57,20 @@ var getWeather = (lat, lon) => {
       .then(data => {
           console.log('Weather Data', data)
 
-        console.log(data.current.weather[0].main)
-        if(data.current.weather[0].main == 'clouds') {
-          youtubeAPI('cloudy')
+        const main = data.current.weather[0].main
+        console.log(main)
+        //replaces troublesome search terms
+        if(main == 'clouds') {
+          youtubeAPI('cloudy+mood')
+        }
+
+        if(main == 'clear skies') {
+          youtubeAPI('cloudy+mood')
         }
         
-          displayCurrent(data);
-          youtubeAPI(data.current.weather[0].main)
-          
+        displayCurrent(data);
+        //calls the youtubeAPI function with weather description search term
+        youtubeAPI(main)          
       })
 }
 
@@ -102,7 +108,6 @@ searchButton.addEventListener('click', getLocation);
 
 
 //YOUTUBE API HERE//
-
 const API_URL = 'https://www.googleapis.com/youtube/v3'
 const API_KEY = 'AIzaSyBrcSLe2BDt-9iUh6lzXLy1Ncg17_sLdX4'
 
@@ -176,7 +181,6 @@ function onPlayerReady(event) {
 
 // 5. The API calls this function when the player's state changes.
 //    The function indicates that when playing a video (state=1),
-//    the player should play for six seconds and then stop.
 var done = false;
 function onPlayerStateChange(event) {
   if (event.data == YT.PlayerState.PLAYING && !done) {
@@ -187,3 +191,5 @@ function onPlayerStateChange(event) {
 function stopVideo() {
   player.stopVideo();
 }
+
+//YOUTUBE API END
