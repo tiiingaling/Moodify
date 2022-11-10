@@ -1,11 +1,12 @@
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-   }
+}
   
 :root {
     --dark: rgb(44, 44, 44);
     --light: rgb(54, 54, 54);
+    --green: #AFC88C;
 }
 
 body {
@@ -20,12 +21,13 @@ body {
 
 .logo img {
     margin-top: 25px;
-    width: 20%;
     display: flex;
+    height: 200px;
+    object-fit: contain;
 }
 
 h1 {
-    padding-bottom: 15px;
+    padding-bottom: 2px;
 }
 
 h2 {
@@ -38,6 +40,11 @@ h3 {
     padding-bottom: 2%;
 }
 
+main {
+    display: flex;
+    text-align: center;
+}
+
 aside {
     display: flex;
     flex-direction: column;
@@ -46,29 +53,32 @@ aside {
     margin-left: 1%;
 }
 
-.search-section input {
-    width:90%;
-    padding-top: 3%;
-    margin-left: 1%;
-    padding-left: 1%;
-}
-
-.search-section button {
-    width:90%;
-    padding-top: 2%;
-    margin-left: 1%;
-    padding-left: 1%;
-    background-color:#AFC88C ;
-    border-color: #AFC88C;
-}
-
 .search-section {
     width:90%;
     background-color: var(--dark);
     margin: 1%;
     margin-top: 6%;
-    height: 13vh;
+    height: auto;
     padding: 6%;
+    border-radius: 20px;
+}
+
+.search-section input {
+    width: 90%;
+    padding: 2%;
+    margin-left: 1%;
+    padding-left: 1%;
+}
+
+.search-section button {
+    width: 90%;
+    padding: 2%;
+    margin-top: 10px;
+    margin-left: 1%;
+    padding-left: 1%;
+    background-color: var(--green);
+    border-color: var(--green);
+    border-radius: 10px;
 }
 
 .search {
@@ -77,32 +87,29 @@ aside {
 
 .about {
     width:90%;
-    background-color: rgb(44, 44, 44);
+    background-color: var(--dark);
     margin:1%;
     padding:6%;
     height: auto;
+    border-radius: 20px;
 }
 
 .about p {
     text-align: justify;
 }
 
-main {
-    display: flex;
-    text-align: center;
-}
-
 section {
     display: flex;
-    width:57%;
     text-align: center;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    margin-top: 2.5%;    
+    width: 67%;
 }
 
 #current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 
@@ -113,9 +120,10 @@ section {
 
 .weather-card {
     background-color: var(--dark);
-    border-radius: 5%;
-    width: 100%;
-    padding: 10%;
+    border-radius: 50px;
+    width: 60%;
+    height: auto;
+    padding: 3%;
     align-items: center;
 }
 
@@ -129,6 +137,7 @@ section {
 #weather {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .weather-info {
@@ -142,14 +151,11 @@ section {
 #player-section {
     display:flex;
     flex-direction: column;
-    margin-top: 7%;
-    justify-content: center;
     padding-bottom: 75px;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 300px;
 }
-
-
 
 footer {
     background-color: rgb(44, 44, 44);
@@ -162,5 +168,58 @@ footer {
 #contact {
     display: flex;
     justify-content:center;
-    
 }
+
+
+/*Media Query*/
+  @media screen and (max-width: 1450px) {
+
+    main {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .about {
+        padding: 2%;
+    }
+
+    aside {
+        flex-direction: row;
+        width: auto;
+        margin-left: 50px;
+    }
+
+    section {
+      flex-direction: row;
+      padding: 2%;
+      margin: 2%;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .logo  {
+        justify-content: center;
+    }
+
+    main {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    aside {
+        flex-direction: column;
+        width: auto;
+        margin-left: 50px;
+    }
+
+    section {
+      flex-direction: column;
+      padding: 2%;
+      margin: 2%;
+      justify-content: center;
+    }
+  }
