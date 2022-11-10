@@ -98,13 +98,15 @@ section {
 }
 
 #player-section {
-    display:flex;
+    display: flex;
     margin-top: 7%;
     justify-content: center;
     padding-bottom: 75px;
     flex-direction: column;
     align-items: center;
 }
+
+
 
 h1 {
     padding-bottom: 15px;
