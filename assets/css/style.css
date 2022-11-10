@@ -93,6 +93,10 @@ section {
     padding:10px;
 }
 
+.description::first-letter {
+    text-transform: capitalize;
+}
+
 #player-section {
     display:flex;
     margin-top: 7%;
@@ -100,7 +104,6 @@ section {
     padding-bottom: 75px;
     flex-direction: column;
     align-items: center;
-
 }
 
 h1 {

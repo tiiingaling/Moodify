@@ -75,12 +75,13 @@ var displayCurrent = (weatherData) => {
   var windSpeed = currentData.wind_speed
   var humidity = currentData.humidity;
   var weatherDesc = currentData.weather[0].description;  
+  console.log("description:", weatherDesc)
      
   var weatherIcon = document.getElementById('weather-icon');
   weatherIcon.innerHTML = `<img src="${iconURL}" alt="${weatherDesc}"></img>`
   
   //weather description data
-  document.getElementById('description').textContent = desc
+  document.getElementById('desc').textContent = weatherDesc
   
   document.getElementById('temp-value').textContent = temp + ' °F'
   document.getElementById('wind-value').textContent = windSpeed + ' mph'
