@@ -108,7 +108,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 60%;
 }
 
 .location-name {
@@ -150,7 +150,6 @@ section {
     display:flex;
     flex-direction: column;
     padding-bottom: 75px;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -174,6 +173,7 @@ footer {
 }
 
 /*Media Query*/
+
   @media screen and (max-width: 1450px) {
 
     main {
