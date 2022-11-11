@@ -1,4 +1,4 @@
-                                                                                                //WEATHER API HERE
+ //WEATHER API HERE
 
 //Global variables
 var WEATHER_API_URL = 'https://api.openweathermap.org';
@@ -18,6 +18,7 @@ var getLocation = () => {
 
   lookupLocation(userLocation);
   addLocation(userLocation);
+
 }
 
 //stores searched location to localStorage
@@ -27,7 +28,6 @@ var addLocation = (selectedLocation) => {
 
   localStorage.setItem("recentLocations", JSON.stringify(recentLocations));
 }
-
 
 //fetch the lon,lat data from LocationInput
 var lookupLocation = (search) => {
@@ -57,9 +57,20 @@ var getWeather = (lat, lon) => {
       .then(data => {
           console.log('Weather Data', data)
 
-          displayCurrent(data);
-          displayForecast(data);
-          
+        const main = data.current.weather[0].main
+        console.log(main)
+        //replaces troublesome search terms
+        if(main == 'clouds') {
+          youtubeAPI('cloudy+mood')
+        }
+
+        if(main == 'clear skies') {
+          youtubeAPI('cloudy+mood')
+        }
+        
+        displayCurrent(data);
+        //calls the youtubeAPI function with weather description search term
+        youtubeAPI(main)          
       })
 }
 
@@ -68,106 +79,87 @@ var displayCurrent = (weatherData) => {
 
   var currentData = weatherData.current
 
-  var temp = currentData.temp;
+    //icon data from API
+    var iconCode = currentData.weather[0].icon;
+    var iconURL = `https://openweathermap.org/img/w/${iconCode}.png`;
+
+  var temp = Math.floor((currentData.temp - 32) * 5 / 9)
+
+  //var temp = currentData.temp
   var windSpeed = currentData.wind_speed
   var humidity = currentData.humidity;
+  var weatherDesc = currentData.weather[0].description; 
+  console.log("description:", weatherDesc)
 
-  //icon data from API
-  var iconCode = currentData.weather[0].icon;
-  var iconURL = `https://openweathermap.org/img/w/${iconCode}.png`;
-  var weatherDesc = currentData.weather[0].description;
-     
+
   var weatherIcon = document.getElementById('weather-icon');
   weatherIcon.innerHTML = `<img src="${iconURL}" alt="${weatherDesc}"></img>`
-
-  document.getElementById('temp-value').textContent = temp + ' °F'
+  
+  //weather description data
+  document.getElementById('desc').textContent = weatherDesc
+  
+  document.getElementById('temp-value').textContent = temp + ' °C'
   document.getElementById('wind-value').textContent = windSpeed + ' mph'
   document.getElementById('humid-value').textContent = humidity + ' %'
   }
-
+  
 searchButton.addEventListener('click', getLocation);
-
 //WEATHER API END
 
 
 //YOUTUBE API HERE//
+const API_URL = 'https://www.googleapis.com/youtube/v3'
+const API_KEY = 'AIzaSyBrcSLe2BDt-9iUh6lzXLy1Ncg17_sLdX4'
 
-//const API_URL = 'https://www.googleapis.com/youtube/v3'
-//const API_KEY = 'AIzaSyBrcSLe2BDt-9iUh6lzXLy1Ncg17_sLdX4'
 
 var requestOptions = {
   method: 'GET',
   redirect: 'follow'
 };
 
-//var term = searchTerms[0].term
-//var apiURL = `${API_URL}/search?key=${API_KEY}&type=video&part=snippet&q=${term}`
-var apiURL = {
-  "kind": "youtube#searchResult",
-  "etag": "hACqa7T3Jh8AdzDWTFpixvxR4bs",
-  "id": {
-    "kind": "youtube#video",
-    "videoId": "cjkFG6bHGNc"
-  },
-  "snippet": {
-    "publishedAt": "2018-08-24T08:22:07Z",
-    "channelId": "UCjzHeG1KWoonmf9d5KBvSiw",
-    "title": "Relaxing Music &amp; Soft Rain: Sleep Music, Calm Piano Music, Healing Music, Peaceful Music ★149",
-    "description": "Relaxing music with soft rain that can be described as sleep music, calm piano music, healing music, peaceful music and relaxing ...",
-    "thumbnails": {
-      "default": {
-        "url": "https://i.ytimg.com/vi/cjkFG6bHGNc/default.jpg",
-        "width": 120,
-        "height": 90
-      },
-      "medium": {
-        "url": "https://i.ytimg.com/vi/cjkFG6bHGNc/mqdefault.jpg",
-        "width": 320,
-        "height": 180
-      },
-      "high": {
-        "url": "https://i.ytimg.com/vi/cjkFG6bHGNc/hqdefault.jpg",
-        "width": 480,
-        "height": 360
-      }
-    },
-    "channelTitle": "Soothing Relaxation",
-    "liveBroadcastContent": "none",
-    "publishTime": "2018-08-24T08:22:07Z"
-  }
-};
 var player;
 var videoId = '';
 
-//fetch(apiURL)
-  //.then(response => response.json())
-  //.then(result => loadYoutubeVideo(result))
-  //.catch(error => console.log('error', error));
 
-loadYoutubeVideo(apiURL);
+function youtubeAPI(description) {
 
-function loadYoutubeVideo(result) {
-  console.log(result)
-  //videoId = result.items[0].id.videoId
-  videoID = result.id.videoId
+  var apiURL = `${API_URL}/search?key=${API_KEY}&type=video&part=snippet&q=${description}+weather+music`
 
-  // 2. This code loads the IFrame Player API code asynchronously.
-  var tag = document.createElement('script');
+  fetch(apiURL)
+    .then(response => response.json())
+    .then(result => loadYoutubeVideo(result))
+    .catch(error => console.log('error', error));
 
-  tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  function loadYoutubeVideo(result) {
+    console.log("DATA", result)
+
+
+    //generates a random number
+    function random(min, max) {
+      return Math.floor(Math.random() * (max - min + 1) + min)
+    }
+
+    videoID = result.items[random(0,4)].id.videoId
+    console.log(videoID)
+
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  }
+}
 
   // 3. This function creates an <iframe> (and YouTube player)
   //    after the API code downloads.
-}
-
 function onYouTubeIframeAPIReady() {
   console.log('onYouTubeIframeAPIReady')
   player = new YT.Player('player', {
-    height: '390',
-    width: '640',
-    videoId: videoId,
+    height: '350',
+    width: '574',
+    videoId: videoID,
     playerVars: {
       'playsinline': 1
     },
@@ -186,14 +178,15 @@ function onPlayerReady(event) {
 
 // 5. The API calls this function when the player's state changes.
 //    The function indicates that when playing a video (state=1),
-//    the player should play for six seconds and then stop.
 var done = false;
 function onPlayerStateChange(event) {
   if (event.data == YT.PlayerState.PLAYING && !done) {
-    setTimeout(stopVideo, 6000);
     done = true;
   }
 }
+
 function stopVideo() {
   player.stopVideo();
 }
+
+//YOUTUBE API END
