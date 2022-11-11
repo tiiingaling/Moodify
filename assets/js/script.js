@@ -157,8 +157,8 @@ function youtubeAPI(description) {
 function onYouTubeIframeAPIReady() {
   console.log('onYouTubeIframeAPIReady')
   player = new YT.Player('player', {
-    height: '390',
-    width: '640',
+    height: '350',
+    width: '574',
     videoId: videoID,
     playerVars: {
       'playsinline': 1

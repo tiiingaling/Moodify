@@ -33,16 +33,14 @@ h1 {
 h2 {
     justify-content: center;
     align-content: center;
-}
-
-h3 {
-    padding-top: 2%;
-    padding-bottom: 2%;
+    font-weight: bold;
 }
 
 main {
     display: flex;
     text-align: center;
+    margin: 10px;
+    margin-bottom: 360px;
 }
 
 aside {
@@ -154,22 +152,26 @@ section {
     padding-bottom: 75px;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 300px;
 }
 
 footer {
     background-color: rgb(44, 44, 44);
-    text-align: center;
-    padding: 80px;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    padding: 50px;
 }
 
 #contact {
     display: flex;
     justify-content:center;
+    align-items: center;
 }
 
+.email {
+    display: flex;
+    flex-direction: row;
+}
 
 /*Media Query*/
   @media screen and (max-width: 1450px) {
