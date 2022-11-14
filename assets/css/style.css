@@ -222,6 +222,6 @@ footer {
       flex-direction: column;
       padding: 2%;
       margin: 2%;
-      justify-content: center;
+      align-items: center;
     }
   }
